@@ -1,0 +1,67 @@
+---
+title: 'Auto CSV Backups'
+description: 'Automatically back up your currency data to a CSV file'
+---
+
+### Note
+**This feature is available for premium users only.**
+
+### Overview
+Auto CSV Backups allow you to automatically back up your currency data to a CSV file. This feature ensures that you have a record of all user balances and transactions, which can be useful for audits, recovery, and data analysis.
+
+### How to Enable Auto CSV Backups
+
+To enable auto CSV backups for a currency, you need to access the `/curr menu` for the specific currency ticker.
+
+#### Accessing the Auto CSV Backups Menu
+1. Use the command `/curr menu [ticker]`, where `[ticker]` is the unique identifier of the currency (e.g., GOLD, SILV).
+2. In the menu that appears, locate the **Auto CSV Backups** button highlighted in the red rectangle in the image below:
+
+   ![Auto CSV Backups Button](https://imgur.com/XF5rilc.png)
+
+#### Selecting a Logging Channel
+1. Click on the **Auto CSV Backups** button to open the logging channel selection menu.
+2. Select the channel where you want the CSV backups to be sent, as shown in the image below:
+
+   ![Select Logging Channel](https://imgur.com/ZWyM1eJ.png)
+
+3. Once selected, the bot will start logging backups in the specified channel. The backups will include a CSV file with details such as User ID, Username, and Balance.
+
+#### Viewing CSV Backups
+1. The bot will post CSV backups in the selected channel.
+2. Example output:
+
+   ![CSV Backup Example](https://imgur.com/mMxtTy1.png)
+
+3. The CSV file will include columns for User ID, Username, and Balance, providing a comprehensive record of all user balances.
+
+### Command Reference
+
+<AccordionGroup>
+  <Accordion title="/curr menu [ticker]">
+    **Command:** `/curr menu [ticker]`  
+    **Description:** Access the currency management menu for the specified ticker.
+    
+    **Process:**
+    1. Use the command `/curr menu [ticker]`.
+    2. A menu will appear with various options, including the **Auto CSV Backups** button.
+  </Accordion>
+  
+  <Accordion title="Auto CSV Backups Button">
+    **Description:** Opens the logging channel selection menu for CSV backups.
+    
+    **Process:**
+    1. Click the **Auto CSV Backups** button in the currency management menu.
+    2. Select the desired channel from the dropdown menu to start logging CSV backups.
+  </Accordion>
+  
+  <Accordion title="CSV Backup Logs">
+    **Description:** Detailed CSV backups are posted in the selected channel.
+    
+    **Details:**
+    - Logs include a CSV file with columns for User ID, Username, and Balance.
+    
+    **Example:**
+    ![CSV Backup Example](https://imgur.com/mMxtTy1.png)
+  </Accordion>
+</AccordionGroup>

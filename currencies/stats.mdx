@@ -1,0 +1,48 @@
+---
+title: 'Viewing Advanced Stats'
+description: 'Get detailed statistics of your currency'
+---
+
+### Overview
+The Advanced Stats feature provides combined statistics for your currency, including the total amount held by companies and users, as well as the total amount excluding the bot. This is useful for monitoring the overall distribution and circulation of your currency.
+
+### How to View Advanced Stats
+
+To view advanced stats for a currency, you need to access the `/curr menu` for the specific currency ticker.
+
+#### Accessing the Advanced Stats Menu
+1. Use the command `/curr menu [ticker]`, where `[ticker]` is the unique identifier of the currency (e.g., GOLD, SILV).
+2. In the menu that appears, locate the **Advanced Stats** button highlighted in the red rectangle in the image below:
+
+   ![Advanced Stats Button](https://imgur.com/ka7tktn.png)
+
+#### Viewing the Statistics
+1. Click on the **Advanced Stats** button to view the detailed statistics of your currency.
+2. The bot will display a message with the following information:
+   - **Total amount (Companies + Users):** The combined total amount of the currency held by both companies and users.
+   - **Total amount (excluding bot):** The total amount of the currency held by users and companies, excluding any amounts held by the bot.
+
+   Example output:
+
+   ![Advanced Stats Example](https://imgur.com/IBDbhNb.png)
+
+### Command Reference
+
+<AccordionGroup>
+  <Accordion title="/curr menu [ticker]">
+    **Command:** `/curr menu [ticker]`  
+    **Description:** Access the currency management menu for the specified ticker.
+    
+    **Process:**
+    1. Use the command `/curr menu [ticker]`.
+    2. A menu will appear with various options, including the **Advanced Stats** button.
+  </Accordion>
+  
+  <Accordion title="Advanced Stats Button">
+    **Description:** Displays detailed statistics for the currency.
+    
+    **Process:**
+    1. Click the **Advanced Stats** button in the currency management menu.
+    2. View the displayed message for detailed statistics, including total amounts held by companies and users, and totals excluding the bot.
+  </Accordion>
+</AccordionGroup>

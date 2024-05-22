@@ -1,0 +1,57 @@
+---
+title: 'Creating Currencies'
+description: 'Start creating trackable currencies immediately'
+---
+
+### Overview
+With this system, you can create and track multiple currencies within your Discord server. Whether you're managing in-game currencies, roleplay items, or just having fun with a custom economy, the possibilities are endless.
+
+### What is a Ticker?
+A ticker is a unique identifier for a currency, typically composed of a few letters, similar to stock symbols (e.g., GOLD for gold coins, SILV for silver coins). It's a shorthand way to refer to the currency within commands and displays.
+
+### How to Create and Manage Currencies
+
+To start creating and managing currencies, you will use two primary commands: `/curr create` and `/list`.
+
+#### Creating a Currency
+
+To create a new currency:
+1. Use the command `/curr create`.
+2. A modal will appear prompting you to input the currency ticker, which is a unique identifier like `GOLD`, `SILV`, etc.
+3. Confirm the details to create the currency.
+
+This command requires admin permissions and allows for the creation of numerous currencies, each uniquely identified by its ticker.
+
+#### Listing All Currencies
+
+To list all the currencies available in the server:
+1. Use the command `/list`.
+2. A list of all the currencies currently tracked in the server will be displayed.
+
+This is a straightforward way to keep track of all active currencies and their details.
+
+### Command Reference
+
+<AccordionGroup>
+  <Accordion title="/curr create">
+    **Command:** `/curr create`  
+    **Description:** Create a new currency. Requires admin permissions.
+    
+    **Options:**
+    - `emoji:` Emoji to represent the currency
+    
+    **Process:**
+    1. Use the command `/curr create`.
+    2. A modal will appear to input the currency ticker, which is a unique identifier like `GOLD`, `SILV`, etc.
+    3. Input the desired currency ticker and confirm to create the currency.
+  </Accordion>
+  
+  <Accordion title="/list">
+    **Command:** `/list`  
+    **Description:** List all currencies available in the server.
+    
+    **Process:**
+    1. Use the command `/list`.
+    2. A list of all the currencies available in the server will be displayed.
+  </Accordion>
+</AccordionGroup>

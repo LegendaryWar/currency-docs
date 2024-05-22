@@ -1,0 +1,72 @@
+---
+title: 'Transaction Logging'
+description: 'Log and monitor currency transactions within your Discord server'
+---
+
+### Note
+**This feature is available for premium users only.**
+
+### Overview
+Transaction logging allows you to keep track of all currency transactions within your Discord server. The logs are recorded hourly, providing detailed information about each transaction.
+
+### How to Enable Transaction Logging
+
+To enable transaction logging for a currency, you need to access the `/curr menu` for the specific currency ticker.
+
+#### Accessing the Transaction Logging Menu
+1. Use the command `/curr menu [ticker]`, where `[ticker]` is the unique identifier of the currency (e.g., GOLD, SILV).
+2. In the menu that appears, locate the **Transaction Logging** button highlighted in the red rectangle in the image below:
+
+   ![Transaction Logging Button](https://imgur.com/QPvw2Hr.png)
+
+#### Selecting a Logging Channel
+1. Click on the **Transaction Logging** button to open the logging channel selection menu.
+2. Select the channel where you want the transaction logs to be sent, as shown in the image below:
+
+   ![Select Logging Channel](https://imgur.com/oQMSsmS.png)
+
+3. Once selected, the bot will start logging transactions in the specified channel. The logs will include details such as the time, user, and amount of currency transacted.
+
+#### Viewing Transaction Logs
+1. The bot will post transaction logs hourly in the selected channel.
+2. Example output:
+
+   ![Transaction Logs Example](https://imgur.com/mjfckMe.png)
+
+3. The logs provide a summary of transactions, including:
+   - Time of the transaction.
+   - User involved.
+   - Amount of currency transacted.
+   - System messages for specific actions (e.g., Autosend, Autotax).
+
+### Command Reference
+
+<AccordionGroup>
+  <Accordion title="/curr menu [ticker]">
+    **Command:** `/curr menu [ticker]`  
+    **Description:** Access the currency management menu for the specified ticker.
+    
+    **Process:**
+    1. Use the command `/curr menu [ticker]`.
+    2. A menu will appear with various options, including the **Transaction Logging** button.
+  </Accordion>
+  
+  <Accordion title="Transaction Logging Button">
+    **Description:** Opens the logging channel selection menu.
+    
+    **Process:**
+    1. Click the **Transaction Logging** button in the currency management menu.
+    2. Select the desired channel from the dropdown menu to start logging transactions.
+  </Accordion>
+  
+  <Accordion title="Hourly Transaction Logs">
+    **Description:** Detailed transaction logs are posted hourly in the selected channel.
+    
+    **Details:**
+    - Logs include the time, user, and amount of currency transacted.
+    - System messages for specific actions (e.g., Autosend, Autotax).
+    
+    **Example:**
+    ![Transaction Logs Example](https://imgur.com/mjfckMe.png)
+  </Accordion>
+</AccordionGroup>

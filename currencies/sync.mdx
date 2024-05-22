@@ -1,0 +1,80 @@
+---
+title: 'Syncing Currencies with Other Servers'
+description: 'Manage and synchronize currencies across multiple Discord servers'
+---
+
+### Overview
+The bot allows you to sync currencies with other Discord servers, enabling seamless management and usage of the same currency across different communities. You can manage sync requests and view all synced servers easily.
+
+### How to Sync Currency with Other Servers
+
+To sync a currency with another server, you need to set the currency mode to either shared or public, and then follow the steps outlined below.
+
+#### Steps to Sync Currency
+1. **Set Mode to Shared or Public:**
+   - Use the `/curr menu [ticker]` command.
+   - Click on the **Set Mode** button and select either **Shared** or **Public** from the dropdown menu.
+
+2. **Copy the UUID:**
+   - In the currency management menu, locate the UUID for the currency. This UUID is needed to initiate the sync process.
+
+3. **Sync on the Other Server:**
+   - On the other server, use the command `/admin currency_sync [UUID]`, where `[UUID]` is the unique identifier for the currency.
+
+4. **Accept Sync Request:**
+   - If the mode was set to shared, go to the **Sync Requests** menu to accept the request from the other server. If the mode was set to public, the currency will be synced automatically.
+
+#### Accessing Sync Menus
+1. Use the command `/curr menu [ticker]`, where `[ticker]` is the unique identifier of the currency (e.g., GOLD, SILV).
+2. In the menu that appears, locate the **Synced Servers** and **Sync Requests** buttons highlighted in the red rectangle in the image below:
+
+   ![Sync Menu Buttons](https://imgur.com/jgCAbJz.png)
+
+#### Managing Sync Requests
+- **Sync Requests:** 
+  - Click on the **Sync Requests** button to view all incoming sync requests.
+  - You can accept a request from a particular server to start syncing the currency.
+
+#### Viewing and Disconnecting Synced Servers
+- **Synced Servers:** 
+  - Click on the **Synced Servers** button to view all servers that are currently synced with your currency.
+  - You can disconnect a server by using its ID.
+
+### Command Reference
+
+<AccordionGroup>
+  <Accordion title="/curr menu [ticker]">
+    **Command:** `/curr menu [ticker]`  
+    **Description:** Access the currency management menu for the specified ticker.
+    
+    **Process:**
+    1. Use the command `/curr menu [ticker]`.
+    2. A menu will appear with various options, including the **Synced Servers** and **Sync Requests** buttons.
+  </Accordion>
+  
+  <Accordion title="Synced Servers Button">
+    **Description:** Opens the list of servers that are currently synced with your currency.
+    
+    **Process:**
+    1. Click the **Synced Servers** button in the currency management menu.
+    2. View all synced servers and use the provided IDs to disconnect any server if needed.
+  </Accordion>
+  
+  <Accordion title="Sync Requests Button">
+    **Description:** Opens the list of all incoming sync requests.
+    
+    **Process:**
+    1. Click the **Sync Requests** button in the currency management menu.
+    2. View and accept sync requests from other servers.
+  </Accordion>
+  
+  <Accordion title="/admin currency_sync [UUID]">
+    **Command:** `/admin currency_sync [UUID]`  
+    **Description:** Sync a currency with another server using the currency's UUID.
+    
+    **Process:**
+    1. On the other server, use the command `/admin currency_sync [UUID]`.
+    2. If the currency mode is shared, accept the sync request in the **Sync Requests** menu.
+    3. If the currency mode is public, the sync will be completed automatically.
+  </Accordion>
+</AccordionGroup>

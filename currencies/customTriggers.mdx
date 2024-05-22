@@ -1,0 +1,70 @@
+---
+title: 'Creating Custom Commands'
+description: 'Set up custom triggers to automate currency actions'
+---
+
+### Overview
+Custom commands allow you to set up specific triggers with cooldown periods that automate currency actions within your Discord server. Currently, the available template is the work template, which prints currency for the user who sent the command. More templates, such as rob templates, will be available in the future.
+
+### How to Create a Custom Command
+
+To create a custom command, you need to access the `/curr menu` for the specific currency ticker.
+
+#### Accessing the Custom Command Menu
+1. Use the command `/curr menu [ticker]`, where `[ticker]` is the unique identifier of the currency (e.g., GOLD, SILV).
+2. In the menu that appears, locate the **Custom Command** button highlighted in the red rectangle in the image below:
+
+   ![Custom Command Button](https://imgur.com/E443d0T.png)
+
+#### Selecting a Template
+1. Click on the **Custom Command** button to open the template selection menu.
+2. Currently, the only available template is the work template. Select it from the dropdown menu, as shown in the image below:
+
+   ![Template Dropdown Menu](https://imgur.com/I0EvqhX.png)
+
+#### Configuring the Custom Command
+1. After selecting the template, a modal will appear asking for the relevant information. Fill in the fields as described below:
+
+   ![Custom Command Modal](https://imgur.com/zbqbpCQ.png)
+
+   - **Trigger Word:** The word or phrase that will trigger the command (e.g., `.work`, `.chop`).
+   - **Cooldown in Hours (Minimum 1):** The cooldown period in hours before the command can be used again.
+   - **Custom Message ([X] will be replaced):** The message that will be displayed when the command is used, with `[X]` being replaced by the action (e.g., "You chopped [X] wood!").
+   - **Amount of Currency to be Printed:** The amount of currency to be given to the user each time the command is used.
+
+2. Click **Submit** to create the custom command.
+
+### Command Reference
+
+<AccordionGroup>
+  <Accordion title="/curr menu [ticker]">
+    **Command:** `/curr menu [ticker]`  
+    **Description:** Access the currency management menu for the specified ticker.
+    
+    **Process:**
+    1. Use the command `/curr menu [ticker]`.
+    2. A menu will appear with various options, including the **Custom Command** button.
+  </Accordion>
+  
+  <Accordion title="Custom Command Button">
+    **Description:** Opens the template selection menu for custom commands.
+    
+    **Process:**
+    1. Click the **Custom Command** button in the currency management menu.
+    2. Select the desired template from the dropdown menu.
+  </Accordion>
+  
+  <Accordion title="Custom Command Modal">
+    **Description:** Configure the details for the custom command.
+    
+    **Fields:**
+    - **Trigger Word:** The word or phrase that will trigger the command.
+    - **Cooldown in Hours (Minimum 1):** The cooldown period before the command can be used again.
+    - **Custom Message ([X] will be replaced):** The message displayed when the command is used.
+    - **Amount of Currency to be Printed:** The amount of currency given to the user.
+    
+    **Process:**
+    1. Fill in the required fields in the modal.
+    2. Click **Submit** to create the custom command.
+  </Accordion>
+</AccordionGroup>

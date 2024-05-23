@@ -15,6 +15,11 @@
       "to": "#EFC163"
     }
   },
+  "analytics": {
+    "gtm": {
+        "tagId": "GT-TNSSFJ7Z"
+    }
+    },
   "topbarLinks": [
     {
       "name": "Support",

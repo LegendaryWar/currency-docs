@@ -28,7 +28,7 @@
   ],
   "topbarCtaButton": {
     "name": "Add Now!",
-    "url": "https://discord.com/oauth2/authorize?client_id=964961739714216018&permissions=259845786640&scope=applications.commands+bot"
+    "url": "/addnow"
   },
   "anchors": [
     {
